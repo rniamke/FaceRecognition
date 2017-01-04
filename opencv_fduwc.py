@@ -25,7 +25,7 @@ labels = []
 
 faces_dict = {} # lbl:name
 
-faces_db = os.path.expanduser('~/opencv_faces_db/')
+faces_db = os.path.expanduser('~/FaceRecognition/opencv_faces_db/')
 
 hasTrained = False
 
@@ -78,7 +78,7 @@ while True:
 
     faces = faceCascade.detectMultiScale(
         gray,
-        scaleFactor=1.2,
+        scaleFactor=1.1,
         minNeighbors=5,
         minSize=(30, 30),
         flags=cv2.CV_FEATURE_PARAMS_HAAR
